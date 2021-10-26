@@ -1,7 +1,7 @@
 const copyAndPush = require("../src/copy-and-push");
 
-describe("", () => {
-  it("returns an array with a given item added on the end", () => {
+describe("returns an array with a given item added on the end", () => {
+  it("returns the array['here', 'are', 'some', 'things']", () => {
     const testArray = ["here", "are", "some"];
 
     const expectation = ["here", "are", "some", "things"];
