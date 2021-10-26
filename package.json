@@ -1,4 +1,21 @@
 {
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest --verbose --runInBand --testLocationInResults",
+    "test:watch": "npm run test -- --watch",
+    "start": "node index.js",
+    "start:watch": "nodemon index.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.8",
     "@babel/plugin-syntax-class-properties": "^7.12.13",
@@ -9,7 +26,6 @@
     "prettier": "^2.4.1"
   },
   "dependencies": {
-    "cross-env": "^7.0.3",
-    "supertest": "^6.1.6"
+    "cross-env": "^7.0.3"
   }
 }
