@@ -12,8 +12,6 @@ describe("get name property from object", () => {
 
     const actual = getName(walterWhite);
 
-    console.log(getName(walterWhite));
-
     expect(actual).toEqual(expectation);
   });
 });
