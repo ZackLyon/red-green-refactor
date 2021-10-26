@@ -10,4 +10,14 @@ describe("returns an array with a given item added on the end", () => {
 
     expect(actual).toEqual(expectation);
   });
+
+  it("verify that original array didn't mutate", () => {
+    const actual = ["here", "are", "some"];
+
+    const expectation = ["here", "are", "some"];
+
+    copyAndPush(actual, "things");
+
+    expect(actual).toEqual(expectation);
+  });
 });
