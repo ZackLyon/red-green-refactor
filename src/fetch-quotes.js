@@ -4,14 +4,13 @@ async function fetchQuotes() {
   const res = await fetch("https://futuramaapi.herokuapp.com/api/quotes/1");
 
   const body = await res.json();
+  const { character, quote, image } = body[0];
 
-  const quoteObj = {
-    name: body[0].character,
-    text: body[0].quote,
-    image: body[0].image,
+  return {
+    name: character,
+    text: quote,
+    image,
   };
-
-  return quoteObj;
 }
 
 module.exports = fetchQuotes;
