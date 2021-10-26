@@ -1,6 +1,5 @@
-function copyAndPush(arr, itemToPush) {
-  arr.push(itemToPush);
-  return arr;
+function copyAndPush(arr, itemToAppend) {
+  return [...arr, itemToAppend];
 }
 
 module.exports = copyAndPush;
