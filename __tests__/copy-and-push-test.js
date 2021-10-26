@@ -6,7 +6,7 @@ describe("returns an array with a given item added on the end", () => {
 
     const expectation = ["here", "are", "some", "things"];
 
-    const actual = copyAndPush(testArray);
+    const actual = copyAndPush(testArray, "things");
 
     expect(actual).toEqual(expectation);
   });
